@@ -1,0 +1,1495 @@
+<!DOCTYPE html>
+<html lang="en">
+ 
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/e3084b8d2e.js" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href= "https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" />
+    <link rel="stylesheet" href="narenstyle.css">
+ 
+   <style>
+    
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+ 
+.container {
+    width: 100vw;
+}
+ 
+.title-container {
+    width: 100vw;
+    background-image: url("./images1/banner-bg.jpg");
+    border-radius: 0px 0px 200px 200px;
+    background-position: center;
+ 
+}
+.naren{
+    padding: 5px;
+    border-radius: 30px;
+}
+ 
+.header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    padding-top: 40px;
+    position: sticky;
+    top: 0px;
+    background-color: #117ef8;
+    z-index: 5;
+}
+ 
+.first-section {
+    width: 30%;
+ 
+}
+ 
+.first-section h1 {
+    color: #f5f4f4;
+}
+ 
+.second-section {
+    width: 60%;
+ 
+}
+ 
+.second-section-ul {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    list-style: none;
+    color: white;
+    font-size: 20px;
+ 
+}
+ 
+.second-section-details {
+    transition: 0.5s;
+ 
+}
+ 
+.second-section-details:hover {
+ 
+    padding: 8px;
+    background-color: rgb(127, 176, 159);
+    border-radius: 10px;
+}
+#hori{
+    color: white;
+    display: none;
+}
+.header .second-section.active{
+    display: flex;
+}
+@media screen and (max-width:500px) {
+    .header {
+        text-align: center;
+        display: flex;
+    }
+ 
+    .header .second-section {
+        display: none;
+ 
+    }
+    #hori{
+        color: white;
+        display: flex;
+        justify-content: flex-end;
+    }
+ 
+ 
+}
+ 
+@media screen and (min-width:501px) and (max-width:800px) {
+    .header .second-section {
+        display: flex;
+        justify-content: space-between;
+    }
+ 
+    .second-section-ul {
+        display: flex;
+        justify-content: space-around;
+        padding: 30px;
+    }
+ 
+}
+ 
+@media screen and (min-width:801px) and (max-width:1100px) {
+ 
+    .header .second-section {
+        display: flex;
+        justify-content: space-evenly;
+ 
+    }
+ 
+    .header .second-section-details {
+        display: flex;
+        justify-content: space-evenly;
+    }
+ 
+}
+ 
+/*  */
+@media screen and (max-width:500px) {}
+ 
+@media screen and (min-width:501px) and (max-width:800px) {}
+ 
+@media screen and (min-width:801px) and (max-width:1100px) {}
+ 
+/*  */
+ 
+.content {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    margin-top: 150px;
+    justify-content: space-evenly;
+    font-family: 'Poppins', sans-serif;
+ 
+ 
+ 
+ 
+}
+ 
+.content-left {
+    width: 60%;
+    text-align: center;
+    margin: 60px;
+ 
+}
+ 
+.content-left-h6 {
+    font-size: 20px;
+    color: #fff;
+    letter-spacing: 0.6px;
+ 
+ 
+}
+ 
+.contant-left-h2 {
+    font-size: 48px;
+    color: #fff;
+    text-shadow: 3px 3px black;
+}
+ 
+.contant-left-p {
+    font-size: 18px;
+    line-height: 28px;
+    color: #fff;
+    margin-bottom: 70px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+ 
+.content-left-input {
+    width: 50%;
+    min-height: 50px;
+    border-radius: 25px;
+    border: none;
+    color: pink;
+    font-size: 14px;
+    background-color: #fff;
+    padding: 0px 25px;
+}
+ 
+.content-left-input2 {
+    width: 20%;
+    min-height: 50px;
+    border-radius: 25px;
+    border: none;
+    color: pink;
+    font-size: 14px;
+    font-size: 15px;
+    text-transform: uppercase;
+    background-color: #ee626b;
+    padding-left: 50px;
+}
+ 
+#button {
+    align-items: center;
+    padding-right: 140px;
+ 
+}
+ 
+.content-right {
+    width: 39%;
+    height: 100%;
+    background-repeat: no-repeat;
+ 
+}
+
+.dollar{
+        position: absolute;
+        height: 40px;
+        width: 70px;
+        background-color: rgb(14, 155, 211);
+        border-radius: 50px;
+        margin-left:450px;
+        top: 180px;
+        margin-top: 100px;
+       
+       }
+       .dollar h3{
+        margin-left: 10px;
+       }
+       .perce{
+        position: absolute;
+        height: 100px;
+        width: 100px;
+        border-radius: 50%;
+        background-color: rgb(223, 101, 101);
+        margin-top: 570px;
+        margin-left: 10px;
+       }
+       .perce h2{
+        margin-top: 30px;
+        margin-left: 12px;
+       }
+ 
+.content-right img {
+    width: 100%;
+ 
+    display: flex;
+    justify-content: end;
+}
+ 
+@media (max-width:500px) {
+ 
+    .content-left {
+        width: 100%;
+        text-align: center;
+ 
+    }
+ 
+    .content {
+        display: flex;
+        flex-wrap: wrap;
+ 
+    }
+ 
+    .contant-left-p {
+        font-size: 13px;
+    }
+ 
+    .content-left-input2 {
+        width: 50%;
+    }
+ 
+    .content-right {
+ 
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: 100%;
+    }
+ 
+   
+ 
+}
+ 
+@media screen and (min-width:501px) and (max-width:800px) {
+ 
+    .content-left {
+        width: 100%;
+        text-align: center;
+ 
+    }
+ 
+    .content {
+        display: flex;
+        flex-wrap: wrap;
+        margin-top: 200px;
+ 
+    }
+ 
+    .contant-left-p {
+        font-size: 18px;
+    }
+ 
+    .content-right {
+        width: 100%;
+        height: 100%;
+    }
+ 
+    .content-right {
+ 
+        display: flex;
+        flex-direction: column;
+ 
+ 
+    }
+ 
+ 
+}
+ 
+@media screen and (min-width:801px) and (max-width:1100px) {
+    .content-left {
+        width: 100%;
+        text-align: center;
+ 
+    }
+ 
+    .content {
+        display: flex;
+        flex-wrap: wrap;
+        margin-top: 200px;
+ 
+    }
+ 
+    .contant-left-p {
+        font-size: 18px;
+    }
+ 
+    .content-right {
+        width: 100%;
+        height: 100%;
+    }
+ 
+    .content-right {
+ 
+        display: flex;
+        flex-direction: column;
+ 
+ 
+    }
+ 
+   
+}
+ 
+/*  */
+.content-last {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-end;
+}
+.image1:hover{
+    transform: scale(1.3);
+        cursor: pointer;
+        transition: all .2s linear; 
+
+}
+ 
+.last1 {
+ 
+    min-width: 200px;
+    min-height: 200px;
+    border: 0px;
+    padding: 35px;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.15);
+    border-radius: 25px;
+    background-color: #f8f2f2;
+    text-align: center;
+    outline: none;
+ 
+}
+ 
+.content-last img {
+    width: 60px;
+    height: 60px;
+    padding: 20px;
+    background-color: #1461b9;
+    border-radius: 50%;
+    transition: 0.6s;
+ 
+}
+ 
+.content-last img:hover {
+ 
+    background-color: #c45656;
+ 
+}
+ 
+@media screen and (max-width:500px) {
+    .content-last {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        margin-top: 550px;
+        row-gap: 30px;
+    }
+ 
+    .content-last .last1 {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        width: 100%;
+        height: 100%;
+        align-items: center;
+        text-align: center;
+ 
+    }
+ 
+}
+ 
+@media screen and (min-width:501px) and (max-width:800px) {
+ 
+    .content-last {
+        display: flex;
+        flex-wrap: wrap;
+        margin-top: 750px;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        row-gap: 30px;
+        column-gap: 30px;
+        flex-direction: row;
+        cursor: pointer;
+ 
+ 
+    }
+ 
+    .content-last .last1 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        text-align: center;
+        min-width: 300px;
+        cursor: pointer;
+ 
+    }
+ 
+}
+ 
+@media screen and (min-width:801px) and (max-width:1100px) {
+    .content-last {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        row-gap: 40px;
+        margin-top: 1100px;
+        cursor: pointer;
+ 
+ 
+    }
+ 
+    .content .last1 {
+        display: flex;
+        justify-content: space-around;
+ 
+    }
+ 
+}
+ 
+.trending {
+    width: 100%;
+    background-color:#f8f2f2;
+    margin-top: 100px;
+ 
+}
+ 
+.trending-nav {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 40px;
+ 
+}
+ 
+ 
+.trending .first-section {
+    width: 40%;
+}
+ 
+.trending .first-section h1 {
+    color: black;
+}
+ 
+.trending .second-section {
+    width: 40%;
+    display: flex;
+    justify-content: flex-end;
+}
+ 
+.trending .second-section h3 {
+    background-color: #ee626b;
+    padding: 9px;
+    border-radius: 10px;
+    color: #f8f2f2;
+}
+ 
+@media screen and (max-width:500px) {
+    .trending-nav {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 50px;
+    }
+ 
+    .trending {
+        display: flex;
+        flex-direction: column;
+        margin-top: 100px;
+        width: 100%;
+        height: 110%;
+ 
+ 
+    }
+ 
+ 
+    .trending .first-section {
+        text-align: center;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+ 
+    .trending .second-section {
+        display: none;
+    }
+ 
+    .trending-images {
+        display: flex;
+        flex-wrap: wrap;
+        row-gap: 30px;
+ 
+ 
+ 
+    }
+ 
+}
+ 
+@media screen and (min-width:501px) and (max-width:560px) {
+ 
+ 
+    .trending-nav {
+        text-align: center;
+    }
+ 
+    .trending {
+        display: flex;
+        flex-direction: column;
+        height: 90%;
+ 
+ 
+    }
+ 
+    .trending .first-section {
+        text-align: center;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+ 
+    .trending .second-section {
+        display: none;
+    }
+ 
+    .trending-images {
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+    }
+}
+ 
+@media screen and (min-width:560px) and (max-width:800px) {
+ 
+    .trending-nav {
+        text-align: center;
+    }
+ 
+    .trending {
+        display: flex;
+        flex-direction: column;
+        height: 50%;
+ 
+ 
+    }
+ 
+    .trending .first-section {
+        text-align: center;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+ 
+    .trending .second-section {
+        display: none;
+    }
+ 
+    .trending-images {
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+    }
+ 
+}
+ 
+@media screen and (min-width:801px) and (max-width:1100px) {
+ 
+    .trending-nav {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+ 
+    .trending {
+        display: flex;
+        flex-direction: column;
+        margin-top: 80px;
+    }
+ 
+    .trending .first-section {
+        text-align: center;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+ 
+    .trending .second-section {
+        display: none;
+    }
+ 
+    .trending-images {
+        display: flex;
+        flex-wrap: wrap;
+    }
+}
+ 
+ 
+.trending-images {
+    display: flex;
+    justify-content: space-evenly;
+    row-gap: 40px;
+    width: 100%;
+ 
+ 
+}
+ 
+.trending .image1 {
+ 
+    border: none;
+    width: 280px;
+    height: 300px;
+    background-color: white;
+    border-radius: 20px;
+ 
+}
+ 
+.trending-images .image1 img {
+    width: 100%;
+    overflow: hidden;
+    border-radius: 30px;
+    text-align: center;
+}
+ 
+.trending .action-bag h3:hover {
+    color: #117ef8;
+}
+ 
+.trending .bags:hover {
+    background-color: #117ef8;
+}
+ 
+.trending-images .action {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center
+}
+ 
+.bags {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border:black;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    background-color: #ee626b;
+    color: white;
+}
+ 
+/*  */
+.trend{
+    width: 100%;
+    background-color:#f5f4f4;
+    margin-top: 70px;
+    border-radius: 90px;
+}
+.trending2 {
+    width: 100%;
+   
+    border-radius: 90px;
+ 
+}
+ 
+.trending-nav2 {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 40px;
+}
+ 
+.trending2 .first-section {
+    width: 40%;
+}
+ 
+.trending2 .first-section h1 {
+    color: black;
+}
+ 
+.trending2 .second-section {
+    width: 40%;
+    display: flex;
+    justify-content: flex-end;
+}
+ 
+.trending2 .second-section h3 {
+    background-color: #ee626b;
+    padding: 9px;
+    border-radius: 10px;
+    color: #f8f2f2;
+}
+ 
+.top-games {
+    display: flex;
+    justify-content: space-evenly;
+}
+ 
+.top-games-border {
+    width: 170px;
+    border: none;
+    background-color: white;
+}
+ 
+.top-games-img {
+    width: 100%;
+    overflow: hidden;
+    border-radius: 30px;
+}
+ 
+.top-games-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center
+}
+ 
+.top-games-content p {
+    color: #7a7a7a;
+    font-size: 14px;
+}
+ 
+.top-games-content h4:hover {
+    color: #117ef8;
+}
+ 
+.top-games-content h4 {
+    font-size: 20px;
+    color: #1e1e1e;
+    margin-top: -10px;
+}
+ 
+.top-games-content .top-games-two h3 {
+    border: none;
+    background-color: #ee626b;
+    padding: 10px;
+    font-size: 17px;
+    border-radius: 40px;
+    color: #f8f2f2;
+ 
+}
+ 
+.top-games-content .top-games-two h3:hover {
+    background-color: #117ef8;
+ 
+}
+ 
+@media screen and (max-width:500px) {
+ 
+ 
+    .trending2 {
+        width: 100%;
+        background-color: #f5f4f4;
+     
+        border-radius: 90px;
+ 
+    }
+ 
+    .trending-nav2 {
+        text-align: center;
+    }
+ 
+    .trending2 .second-section {
+        display: none;
+    }
+ 
+    .top-games {
+        display: flex;
+        flex-wrap: wrap;
+        row-gap: 40px;
+ 
+    }
+ 
+ 
+}
+ 
+@media screen and (min-width:501px) and (max-width:800px) {
+    .trending2 {
+ 
+        display: flex;
+        flex-direction: column;
+    }
+ 
+    .trending-nav2 {
+        text-align: center;
+    }
+ 
+    .trending2 .second-section {
+        display: none;
+    }
+ 
+ 
+ 
+    .top-games {
+        display: flex;
+        flex-wrap: wrap;
+        row-gap: 40px;
+    }
+ 
+}
+ 
+@media screen and (min-width:801px) and (max-width:1100px) {
+ 
+   
+    .trending-nav2 {
+        text-align: center;
+    }
+ 
+    .trending2 .second-section {
+        display: none;
+    }
+ 
+    .top-games {
+        display: flex;
+        flex-wrap: wrap;
+        row-gap: 40px;
+    }
+ 
+ 
+}
+ 
+/*  */
+ 
+.categories {
+    width: 100%;
+    padding: 40px;
+    margin-top: 70px;
+}
+ 
+.categories-nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 40px;
+}
+ 
+.categories-nav p {
+    color: #ee626b;
+}
+ 
+ 
+ 
+.categories-img {
+ 
+ 
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+ 
+}
+ 
+.categories-box {
+    border: none;
+    min-width: 180px;
+    min-height: 240px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 40px;
+    background-color: #f8f2f2;
+    background-color: #117ef8;
+ 
+}
+ 
+.categories .images1 h4 {
+ 
+    width: 100%;
+    height: 50px;
+    border: 30px;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+    color: #f5f4f4;
+}
+ 
+.categories .images2 img {
+    min-width: 180px;
+    min-height: 189px;
+    overflow: hidden;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+ 
+}
+
+.categories .images2:hover {
+        transform: scale(1.3);
+        cursor: pointer;
+        transition: all .2s linear; 
+}
+@media screen and (max-width:500px) {
+    .categories {
+        display: flex;
+        flex-wrap: wrap;
+        text-align: center;
+        align-items: center;
+ 
+        justify-content: center;
+ 
+ 
+    }
+ 
+    .categories-nav {
+        display: flex;
+        flex-wrap: wrap;
+        text-align: center;
+ 
+ 
+    }
+ 
+    .categories-img {
+        display: flex;
+        flex-wrap: wrap;
+        row-gap: 40px;
+        width: 100%;
+ 
+    }
+ 
+ 
+}
+ 
+@media (min-width:501px) and (max-width:800px) {
+    .categories {
+        display: flex;
+        flex-wrap: wrap;
+        margin-top: 100px;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+     
+ 
+    }
+ 
+    .categories-nav {
+        display: flex;
+        flex-wrap: wrap;
+        text-align: center;
+ 
+    }
+ 
+    .categories-img {
+        display: flex;
+        flex-wrap: wrap;
+        row-gap: 40px;
+    }
+ 
+}
+ 
+@media screen and (min-width:801px) and (max-width:1100px) {
+ 
+    .categories {
+        display: flex;
+        flex-wrap: wrap;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+ 
+    }
+ 
+    .categories-nav {
+        display: flex;
+        flex-wrap: wrap;
+        text-align: center;
+ 
+ 
+    }
+ 
+    .categories-img {
+        display: flex;
+        flex-wrap: wrap;
+        row-gap: 40px;
+    }
+ 
+}
+.block5{
+        margin-top: 150px;
+       }
+       .pubg_img img{
+         
+        height:500px;
+        width: 550px;
+        margin-left: 30%;
+       }
+        .pubg_img:hover{
+            transform: translateX(20px);
+        cursor: pointer;
+        transition: all .2s linear; 
+        }
+
+
+       .block5_1{
+         position: absolute;
+        height:500px;
+        width: 500px;
+        border-radius: 30px;
+        margin-top: 100px;
+        margin-left: 100px;
+        background-color:rgb(225, 223, 223);
+       }
+       .block5_1_sub{
+        padding-left: 100px;
+        width: 450px;
+        margin-top: 80px;
+        display: flex;
+        flex-direction:column;
+       }
+       #btn_shop{
+        width: 150px;
+        border-radius: 30px;
+        margin-top: 20px;
+       }
+       .block5_2{
+        position: absolute;
+        height:400px;
+        width: 500px;
+        border-radius: 30px;
+        margin-left: 850px;
+        margin-top: 200px;
+        background-color:rgb(225, 223, 223);
+       }
+       .block5_2_sub{
+        padding-left: 100px;
+        width: 500px;
+        margin-top: 80px;
+        display: flex;
+        flex-direction:column;
+       }
+       .block5_2_sub input{
+        margin-top: 50px;
+        height: 38px;
+        width: 300px;
+        border-radius: 15px;
+        border: none;
+ 
+       }
+       #btn_subscribe{
+        position: absolute;
+        margin-top: 242px;
+        margin-left:200px ;
+        border-radius: 15px;
+        /* color: red; */
+       }
+
+
+
+
+
+ 
+/*  */
+ 
+.footer {   
+    background-color: #117ef8;
+    margin-top: 100px;
+    font-size: 18px;
+ 
+    min-width: 100%;
+    border-radius: 150px 150px 0px 0px;
+}
+ 
+.footer p {
+    text-align: center;
+    color: #f8f2f2;
+    padding-top: 50px;
+    letter-spacing: 1px;
+}
+ 
+@media screen and (max-width:480px) {}
+ 
+@media screen and (min-width:481px) and (max-width:780px) {}
+ 
+@media screen and (min-width:781px) and (max-width:1110px) {}
+ 
+   </style>
+</head>
+ 
+<body>
+    <div class="container">
+        <div class="title-container">
+            <div class="header">
+                <div class="first-section">
+                    <a href="index.html">
+                            <img src="./images1/Screenshot (54) LOGO.png" alt=" no image" class="naren" >
+                     </a>
+                    <i id="hori" class="fa-solid fa-bars header-first"></i>
+ 
+                </div>
+                <div class="second-section">
+ 
+                    <ul class="second-section-ul">
+                        <li class="second-section-details">
+                            <a href="Home.html"></a> Home
+                        </li>
+                        <li class="second-section-details">
+                            <a href="Product Details"></a> Our Shop
+                        </li>
+                        <li class="second-section-details">Product Details</li>
+                        <li class="second-section-details">Contact Us</li>
+                        <li style="background-color:  #ee626b;padding: 9px;border-radius: 35px;">
+                            <a href="SIGN IN"></a> SIGN IN
+                        </li>
+                    </ul>
+ 
+ 
+                </div>
+            </div>
+            <!--  -->
+            <div class="content">
+ 
+                <div class="content-left">
+                    <h6 class="content-left-h6">WELCOME TO BUSA's </h6>
+                    <h2 class="contant-left-h2">BEST GAMING SITE EVER</h2>
+                    <p class="contant-left-p">NIKHIL & NITHIN Gaming is free Bootstrap 5 HTML website template for
+                        your gaming websites.You can download and use this layout for
+                        Commercial purpose.Please tell your friends about BT NN &Co.
+                    </p>
+                    <input type="text" placeholder="Type Something" class="content-left-input">
+                    <input type="button" id="button" value="Search Now" class="content-left-input2">
+                </div>
+                <div class="content-right">
+                    <div class="dollar"> <h3>$22</h3></div>
+                    <div id="text_color" class="perce"><h2> <b>-40%</b></h2></div>
+                    <img src="./images1/banner main.jpg" alt="no image">
+                </div>
+ 
+ 
+            </div>
+            <div class="content-last">
+                <div class="last1">
+                    <img src="./images1/image11.png" alt="no image">
+                    <h4>FREE STORAGE</h4>
+                </div>
+                <div class="last1"><img src="./images1/image22.png" alt="no image">
+                    <h4>USER MODE</h4>
+                </div>
+                <div class="last1"><img src="./images1/image33.png" alt="no image">
+                    <h4>REPLY READY</h4>
+                </div>
+                <div class="last1"><img src="./images1/image44.png" alt="no image">
+                    <h4>EASY LAYOUT</h4>
+                </div>
+            </div>
+            <!--  -->
+        </div>
+            
+ 
+ 
+ 
+ 
+            <!--  -->
+ 
+ 
+            <div class="trending">
+                <div class="trending-nav">
+                    <div class="first-section">
+                        <p>TRENDING</p>
+                        <h1>Trending Games</h1>
+                    </div>
+                    <div class="second-section">
+                        <h3>VIEW ALL</h3>
+                    </div>
+                </div>
+ 
+                <div class="trending-images">
+                    <div class="image1">
+                        <img src="./images1/trendingcard1.jpg" alt="no image">
+                        <div class="action">
+                            <div class="action-bag">
+                                <p>Action</p>
+                                <h3>Assassin Creed</h3>
+                            </div>
+                            <div class="bags">
+                                <i class="fas fa-shopping-bag"></i>
+                            </div>
+ 
+ 
+                        </div>
+                    </div>
+ 
+                    <div class="image1">
+                        <img src="./images1/trendingcard2.jpg" alt="no image">
+                        <div class="action">
+                            <div class="action-bag">
+                                <p>Action</p>
+                                <h3>Assassin Creed</h3>
+                            </div>
+                            <div class="bags">
+                                <i class="fas fa-shopping-bag"></i>
+                            </div>
+ 
+ 
+                        </div>
+                    </div>
+ 
+                    <div class="image1">
+                        <img src="./images1/trendingcard3.jpg" alt="no image">
+                        <div class="action">
+                            <div class="action-bag">
+                                <p>Action</p>
+                                <h3>Assassin Creed</h3>
+                            </div>
+                            <div class="bags">
+                                <i class="fas fa-shopping-bag"></i>
+                            </div>
+ 
+ 
+                        </div>
+                    </div>
+ 
+                    <div class="image1">
+                        <img src="./images1/trendingcard4.jpg" alt="no image">
+                        <div class="action">
+                            <div class="action-bag">
+                                <p>Action</p>
+                                <h3>Assassin Creed</h3>
+                            </div>
+                            <div class="bags">
+                                <i class="fas fa-shopping-bag"></i>
+                            </div>
+ 
+ 
+                        </div>
+                    </div>
+ 
+                </div>
+            </div>
+            <!--  -->
+           <div class="trend">
+            <div class="trending2">
+                <div class="trending-nav2">
+                    <div class="first-section">
+                        <p>TOP GAMES</p>
+                        <h1>Most Played</h1>
+                    </div>
+                    <div class="second-section">
+                        <h3>VIEW ALL</h3>
+                    </div>
+                </div>
+                <div class="top-games">
+                    <div class="top-games-border">
+                        <div class="top-games-img">
+                            <img src="./images1/img5.jpg" alt="no image">
+                        </div>
+                        <div class="top-games-content">
+                            <div class="top-games-one">
+                                <p>Adventure</p>
+                                <h4>Assassin Creed</h4>
+                            </div>
+                            <div class="top-games-two">
+                                <h3>EXPLORE</h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="top-games-border">
+                        <div class="top-games-img">
+                            <img src="./images1/img6.jpg" alt="no image">
+                        </div>
+                        <div class="top-games-content">
+                            <div class="top-games-one">
+                                <p>Adventure</p>
+                                <h4>Assassin Creed</h4>
+                            </div>
+                            <div class="top-games-two">
+                                <h3>EXPLORE</h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="top-games-border">
+                        <div class="top-games-img">
+                            <img src="./images1/img7.jpg" alt="no image">
+                        </div>
+                        <div class="top-games-content">
+                            <div class="top-games-one">
+                                <p>Adventure</p>
+                                <h4>Assassin Creed</h4>
+                            </div>
+                            <div class="top-games-two">
+                                <h3>EXPLORE</h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="top-games-border">
+                        <div class="top-games-img">
+                            <img src="./images1/img8.jpg" alt="no image">
+                        </div>
+                        <div class="top-games-content">
+                            <div class="top-games-one">
+                                <p>Adventure</p>
+                                <h4>Assassin Creed</h4>
+                            </div>
+                            <div class="top-games-two">
+                                <h3>EXPLORE</h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="top-games-border">
+                        <div class="top-games-img">
+                            <img src="./images1/img9.jpg" alt="no image">
+                        </div>
+                        <div class="top-games-content">
+                            <div class="top-games-one">
+                                <p>Adventure</p>
+                                <h4>Assassin Creed</h4>
+                            </div>
+                            <div class="top-games-two">
+                                <h3>EXPLORE</h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="top-games-border">
+                        <div class="top-games-img">
+                            <img src="./images1/10img.jpg" alt="no image">
+                        </div>
+                        <div class="top-games-content">
+                            <div class="top-games-one">
+                                <p>Adventure</p>
+                                <h4>Assassin Creed</h4>
+                            </div>
+                            <div class="top-games-two">
+                                <h3>EXPLORE</h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+            <!--  -->
+ 
+            <div class="categories">
+                <div class="categories-nav">
+                    <p>CATEGORIES</p>
+                    <h1>Top Categories</h1>
+                </div>
+                <div class="categories-img">
+                    <div class="categories-box">
+                        <div class="images1">
+                            <h4>Action</h4>
+                        </div>
+                        <div class="images2">
+                            <img src="./images1/categories-01.jpg" alt="no image">
+                        </div>
+                    </div>
+                    <div class="categories-box">
+                        <div class="images1">
+                            <h4>Action</h4>
+                        </div>
+                        <div class="images2">
+                            <img src="./images1/categories-02.jpg" alt="no image">
+                        </div>
+                    </div>
+                    <div class="categories-box">
+                        <div class="images1">
+                            <h4>Action</h4>
+                        </div>
+                        <div class="images2">
+                            <img src="./images1/categories-03.jpg" alt="no image">
+                        </div>
+                    </div>
+                    <div class="categories-box">
+                        <div class="images1">
+                            <h4>Action</h4>
+                        </div>
+                        <div class="images2">
+                            <img src="./images1/categories-04.jpg" alt="no image">
+                        </div>
+                    </div>
+                    <div class="categories-box">
+                        <div class="images1">
+                            <h4>Action</h4>
+                        </div>
+                        <div class="images2">
+                            <img src="./images1/categories-05.jpg" alt="no image">
+                        </div>
+                    </div>
+ 
+ 
+                </div>
+ 
+ 
+            </div>
+            <!-- . -->
+            <div class="block5">
+                <div class="block5_1">
+                    <div class="block5_1_sub">
+                        <p style="color:rgb(223, 101, 101) ;"><b>OUR SHOP</b></p>
+                        <h1><b>Go Pre-Order Buy & Get Best Prices For You!</b></h1>
+                        <p style="margin-top: 50px;"><b>Lorem ipsum dolor consectetur adipiscing, sed do eiusmod tempor incididunt.</b></p>
+                        <button id="btn_shop" class=" btn btn-danger">SHOP NOW</button>
+                    </div>
+     
+                </div>
+                <div class="block5_2">
+     
+                    <div class="block5_2_sub">
+                        <p style="color:rgb(223, 101, 101) ;"><b>NEWSLETTER</b></p>
+                        <h1><b>Get Up To $100 Off Just Buy Subscribe Newsletter!</b></h1>
+                        <input type="search" placeholder=" Your email...">
+                        <button id="btn_subscribe" class=" btn btn-danger">SUBSCRIBE NOW</button>
+                    </div>
+     
+                </div>
+                <div class="pubg_img">
+                    <img src="./images1/pubg.jpg" alt="no image">
+                </div>
+            <!--  -->
+ 
+            <div class="footer">
+                <p>Copyright © 2032 Nikhil & Nithin Gaming Company. All rights reserved. Design:BT NN &Co  Pubg pro players.</p>
+            </div>
+ 
+       
+    </div>
+   
+</body>
+ 
+</html>
